@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   get '/' => 'dashboard#index', as: :root
   get 'dashboard', to: 'dashboard#index', as: :dashboard
 
+
+  resources :groups
 end
